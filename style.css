@@ -156,6 +156,7 @@ section {
 }
 .header .login-form .btn {
     inline-size: 100%;
+    text-align: center;
     margin: 1rem 0;
 }
 #menu-btn {

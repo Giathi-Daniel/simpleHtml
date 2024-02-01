@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,700&display=swap');
+
+/* ********************************* GENERAL STYLING **************************************** */
+:root {
+    --primary-color: #03045E;
+    --color: #4581CF;
+    --black: #000;
+    --white: #FFF;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+html::-webkit-scrollbar {
+    inline-size: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5rem;
+}
+
+section {
+    padding: 4rem 9%;
+}
+
+.btn {
+    display: flex;
+    border-radius: 5rem;
+    background: var(--primary-color);
+    color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: .9rem 3rem;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    font-size: 1.7rem;
+    margin-block-start: 1rem;
+    justify-content: center;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    inset-block-start: 0;
+    block-size: 100%;
+    inline-size: 0%;
+    background: #5858B3;
+    z-index: -1;
+    inset-inline-start: 0;
+    transition: .3s linear;
+}
+.btn:hover::before {
+    inline-size: 100%;
+}
+
+/* ********************** NAV BAR *********************** */
+.header {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inset-inline-start: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-sizing: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+}
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .logo i {
+    color: var(--primary-color);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1.7rem;
+}
+.header .navbar a:hover {
+    color: var(--primary-color);
+}
+.header .icons div {
+    font-size: 2.5rem;
+    margin-inline-start: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+}
+.header .icons div:hover {
+    color: var(--primary-color);
+}
+
+/* login */
+.header .login-form {
+    position: absolute;
+    inset-block-start: 115%;
+    inset-inline-end: -105%;
+    background: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    inline-size: 35rem;
+    padding: 2rem;
+}
+.header .login-form.active {
+    inset-inline-end: 2rem;
+    transition: .4s linear;
+}
+.header .login-form h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-block-end: .7rem;
+}
+.header .login-form .box {
+    border: .1rem solid rgba(0,0,0,.1);
+    margin: .7rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-transform: none;
+    inline-size: 100%;
+}
+.header .login-form .remember {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin: .7rem 0;
+}
+.header .login-form .remember label {
+    font-size: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .login-form .btn {
+    inline-size: 100%;
+    margin: 1rem 0;
+}
+#menu-btn {
+    display: none;
+}
+
+
+/* ************************** HERO SECTION **************************** */
+.home {
+    min-block-size: 95vh;
+    background: url("images/home.jpg") no-repeat center / cover;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    block-size: 100%;
+    inline-size: 100%;
+    /* background: rgba(0,0,0,.4); */
+    z-index: -1;
+}
+.home .content {
+    text-align: center;
+    max-inline-size: 60rem;
+}
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--white);
+    padding-block-end: 1.5rem;
+}
+.home .content h3 span {
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+
+/* ************************** BANNER SECTION **************************** */
+.banner .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    padding-block-start: 5rem;
+}
+.banner .box-container .box {
+    text-align: center;
+    padding: 4rem;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+.banner .box-container .box img {
+    margin: 1rem 0;
+    block-size: 5rem;
+    transition: 500ms ease;
+}
+.banner .box-container .box:hover img {
+    transform: scale(-1) rotate(180deg);
+}
+.banner .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--color);
+}
+.banner .box-container .box p {
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 2;
+}
+/* ************************** BANNER SECTION **************************** */
+
+
+/* ************************** HERO SECTION **************************** */
+/* ************************** HERO SECTION **************************** */
+/* ************************** HERO SECTION **************************** */
+/* ************************** HERO SECTION **************************** */
+/* ************************** HERO SECTION **************************** */
+/* ************************** HERO SECTION **************************** */
+/* ************************** HERO SECTION **************************** */

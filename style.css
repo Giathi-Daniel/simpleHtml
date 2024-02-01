@@ -80,7 +80,7 @@ section {
     inset-inline-start: 0;
     z-index: 1000;
     background: var(--white);
-    box-sizing: var(--box-shadow);
+    box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -204,7 +204,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
-    padding-block-start: 5rem;
+    padding-block-start: 1rem;
 }
 .banner .box-container .box {
     text-align: center;

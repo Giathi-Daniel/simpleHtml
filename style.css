@@ -113,6 +113,7 @@ section {
     color: var(--black);
     margin: 0 1.7rem;
 }
+.header .navbar a.active,
 .header .navbar a:hover {
     color: var(--primary-color);
 }
@@ -457,6 +458,7 @@ section {
 .review .box-container .box .user h3 {
     font-size: 1.7rem;
     color: var(--primary-color);
+    padding-block-end: .5rem;
 }
 .review .box-container .box .user span {
     font-size: 1.5rem;
@@ -464,6 +466,85 @@ section {
 }
 
 
-/* ************************** HERO SECTION **************************** */
+/* ************************** FOOTER SECTION **************************** */
+.footer {
+    background: #FFF;
+}
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+.footer .box-container .box {
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+.footer .box-container .box h3 i {
+    padding-inline-end: .5rem;
+}
+.footer .box-container .box p {
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 2;
+}
+.footer .box-container .box p i {
+    padding-inline-end: .5rem;
+    color: var(--primary-color);
+}
+.footer .box-container .box .share {
+    padding-block-start: 1rem;
+}
+.footer .box-container .box .share a {
+    block-size: 4.5rem;
+    inline-size: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    border: .2rem solid var(--primary-color);
+    color: var(--primary-color);
+    margin-inline-end: .5rem;
+    text-align: center;
+}
+.footer .box-container .box .share a:hover {
+    color: var(--white);
+    background: var(--primary-color);
+}
+.footer .box-container .box .fa-envelope {
+    text-transform: none !important;
+}
+.footer .box-container .box form .email {
+    inline-size: 100%;
+    border-radius: 5rem;
+    border: .2rem solid var(--primary-color);
+    background: none;
+    font-size: 1.5rem;
+    text-transform: none;
+    color: var(--black);
+    margin-block-end: 1rem;
+    padding: 1.2rem 1.4rem;
+}
+.footer .box-container .box form .btn {
+    cursor: pointer;
+}
+.footer .credit {
+    font-size: 2rem;
+    text-align: center;
+    border-block-start: .1rem solid var(--black);
+    padding: 1rem;
+    padding-block-start: 2rem;
+    margin-block-start: 2rem;
+    color: var(--black);
+}
+.footer .credit span {
+    color: var(--primary-color);
+}
+
+
 /* ************************** HERO SECTION **************************** */
 /* ************************** HERO SECTION **************************** */

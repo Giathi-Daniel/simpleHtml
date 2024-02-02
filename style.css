@@ -336,9 +336,75 @@ section {
 }
 
 
-/* ************************** HERO SECTION **************************** */
-/* ************************** HERO SECTION **************************** */
-/* ************************** HERO SECTION **************************** */
+/* ************************** MENU SECTION **************************** */
+.menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.menu .box-container .box {
+    block-size: 30rem;
+    flex-direction: 1 1 30rem;
+    border: .5rem solid var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.menu .box-container .box img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+}
+.menu .box-container .box .content {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    block-size: 100%;
+    inline-size: 100%;
+    background: rgba(255,255,255,.9);
+    padding: 2rem;
+    padding-block-start: 8rem;
+    text-align: center;
+}
+.menu .box-container .box .content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+.menu .box-container .box:hover .content {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* ************************** GALLERY SECTION **************************** */
+.gallery .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.gallery .box-container .box {
+    block-size: 25rem;
+    flex: 1 1 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.gallery .box-container .box img {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+}
+.gallery .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+
+/* ************************** REVIEW SECTION **************************** */
+
+
+
 /* ************************** HERO SECTION **************************** */
 /* ************************** HERO SECTION **************************** */
 /* ************************** HERO SECTION **************************** */

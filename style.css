@@ -468,7 +468,7 @@ section {
 
 /* ************************** FOOTER SECTION **************************** */
 .footer {
-    background: #FFF;
+    background: #EFF;
 }
 .footer .box-container {
     display: grid;
@@ -546,5 +546,56 @@ section {
 }
 
 
-/* ************************** HERO SECTION **************************** */
-/* ************************** HERO SECTION **************************** */
+
+/* ************************** MEDIA QUERIES **************************** */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        inset-block-start: 99%;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
+        background: #FFF;
+        border-block-start: .1rem solid var(--primary-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+    .package .box-container .box {
+        flex-direction: column;
+    }
+    .package .box-container .box .image,
+    .package .box-container .box .content,
+    .package .box-container .box .price {
+        inline-size: 100%;
+    }
+    .package .box-container .box .image img {
+        border-radius: 1rem 1rem 0 0;
+    }
+    .package .box-container .box .price {
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}

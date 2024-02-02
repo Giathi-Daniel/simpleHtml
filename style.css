@@ -43,6 +43,20 @@ section {
     padding: 2rem 7%;
 }
 
+.heading {
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-block-end: 3rem;
+    padding: 1.2rem 0;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--color);
+    text-transform: uppercase;
+}
+
 .btn {
     display: inline-block;
     border-radius: 5rem;
@@ -232,10 +246,96 @@ section {
     color: var(--black);
     line-height: 2;
 }
-/* ************************** BANNER SECTION **************************** */
 
 
-/* ************************** HERO SECTION **************************** */
+/* ************************** ABOUT SECTION **************************** */
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    align-items: center;
+}
+.about .row .image {
+    flex: 1 1 30rem;
+}
+.about .row .image img {
+    inline-size: 100%;
+}
+.about .row .content {
+    flex: 1 1 50rem;
+}
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: var(--color);
+    padding: 2rem 0;
+}
+.about .row .content p {
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+/* ************************** PACKAGE SECTION **************************** */
+.package .box-container .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    margin-block-end: 3rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+.package .box-container .box .image {
+    flex: 1 1 30rem;
+    block-size: 30rem;
+}
+.package .box-container .box .image img {
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+.package .box-container .box .content {
+    padding: 3rem 2rem;
+}
+.package .box-container .box .content,
+.package .box-container .box .price {
+    flex: 1 1 calc(30% - 3rem);
+}
+.package .box-container .box .content h3 {
+    font-size: 2.2rem;
+    color: var(--color);
+}
+.package .box-container .box .content p {
+    font-size: 1.6rem;
+    color: var(--black);
+    padding-block-start: 1.5rem;
+    line-height: 1.8;
+}
+.package .box-container .box .price {
+    padding: 6.9rem 2rem;
+    text-align: center;
+    color: #FFF;
+    background: #4581CF;
+    border-radius: 0 1rem 1rem 0;
+}
+.package .box-container .box .price h4 {
+    font-size: 2.9rem;
+    margin-block-end: 1rem;
+}
+.package .box-container .box .price h5 {
+    margin-block-end: 2rem;
+    font-size: 1.7rem;
+}
+.package .box-container .box .price .stars i {
+    font-size: 1.7rem;
+    color: var(--white);
+    margin-block-end: 1rem;
+}
+
+
 /* ************************** HERO SECTION **************************** */
 /* ************************** HERO SECTION **************************** */
 /* ************************** HERO SECTION **************************** */

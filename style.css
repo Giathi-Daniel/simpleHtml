@@ -402,7 +402,66 @@ section {
 
 
 /* ************************** REVIEW SECTION **************************** */
-
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+.review .content {
+    flex: 1 1 42rem;
+}
+.review .content span {
+    font-size: 2rem;
+    color: var(--color);
+}
+.review .content h3 {
+    font-size: 3rem;
+    padding-block-start: .5rem;
+    color: var(--primary-color);
+}
+.review .content p {
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 1rem 0;
+    line-height: 2;
+}
+.review .box-container {
+    flex: 1 1 42rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.review .box-container .box {
+    flex: 1 1 20rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.review .box-container .box p {
+    font-size: 1.4rem;
+    padding-block-end: 1rem;
+    line-height: 2;
+    color: var(--black);
+}
+.review .box-container .box .user {
+    display: flex;
+    align-items: center;
+    grid-area: 1rem;
+}
+.review .box-container .box .user img {
+    block-size: 5rem;
+    inline-size: 5rem;
+    border-radius: 50%;
+}
+.review .box-container .box .user h3 {
+    font-size: 1.7rem;
+    color: var(--primary-color);
+}
+.review .box-container .box .user span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
 
 
 /* ************************** HERO SECTION **************************** */
